@@ -1,0 +1,1376 @@
+{
+	"name": "layer",
+	"versions": {
+		"attack": "17",
+		"navigator": "5.1.1",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"Linux",
+			"macOS",
+			"Network Devices",
+			"ESXi",
+			"PRE",
+			"Containers",
+			"IaaS",
+			"SaaS",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 2,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false,
+		"expandedSubtechniques": "annotated"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1047",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基对WMI具有基础监管功能。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1113",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对系统中监控屏幕的程序进行查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对登陆脚本、登陆hook等脚本具有监控防护的规则。\n\nHIDS：针对脚本文件的编译运行具备监控和防护规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1037",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对登陆脚本、登陆hook等脚本具有监控防护的规则。\n\nHIDS：针对脚本文件的编译运行具备监控和防护规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "NIDS：可检测多种中间人攻击包括ARP缓存投毒、DHCP欺骗等",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1557",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "NIDS：可检测多种中间人攻击包括ARP缓存投毒、DHCP欺骗等",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1583",
+			"tactic": "resource-development",
+			"color": "#31a354",
+			"comment": "WAF：根据报文和行为模式进行拦截防护。\n\nNIDS：对基础设施有规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1592",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "WAF：根据报文内容有服务器信息泄漏防护、数据库信息泄漏防护等。\n\nNIDS：可识别Apache、kubernetes等信息泄漏攻击。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1129",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对终端电脑的可疑dll文件会进行查杀和告警。\n\nHIDS：针对linux系统中的可疑so文件会进行查杀和告警。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1006",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：windows提供了很多api方便程序执行文件相关操作，卡巴斯基对其有着严格的监管，并且也会对直接读取硬盘内容的行为进行管控。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1123",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对麦克风、摄像头或者音频应用的监听木马会有查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "HIDS、卡巴斯基针对系统进程的创建或修改都具有监控管理功能。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1543",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "HIDS、卡巴斯基针对系统进程的创建或修改都具有监控管理功能。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "persistence",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1133",
+			"tactic": "initial-access",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1539",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "Cookie\n\nWAF：防爆破、防cookie、token泄漏等\n\nNIDS：可识别coolkie、token或密码爆破等入侵账户攻击模式。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1069",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "卡巴斯基：会防护异常进程对权限组的发现和访问。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1594",
+			"tactic": "reconnaissance",
+			"color": "#a1d99b",
+			"comment": "天眼情报",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1561",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1025",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对可移动介质中的木马病毒会进行查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对用户验证注册表配置项、时间提供者配置项、windows登陆帮助dll、安全支持提供者、可加载内核模块、快捷方式、端口监控配置、打印处理配置等具有监控防护的规则。\n\nHIDS：针对cron等定时任务具备防篡改",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1547",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对用户验证注册表配置项、时间提供者配置项、windows登陆帮助dll、安全支持提供者、可加载内核模块、快捷方式、端口监控配置、打印处理配置等具有监控防护的规则。\n\nHIDS：针对cron等定时任务具备防篡改",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1080",
+			"tactic": "lateral-movement",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对共享内容中的木马病毒会进行查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1137",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对office的模版宏、相关dll等进行防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1115",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对clip.exe或者pbpaste有保护规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1071",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "NIDS：web协议、文件传输协议、邮件协议、DNS协议等防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "卡巴斯基和HIDS有针对At、Cron、schtasks、系统定时器、容器调度任务等具有监控和篡改防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基和HIDS有针对At、Cron、schtasks、系统定时器、容器调度任务等具有监控和篡改防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1053",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "卡巴斯基和HIDS有针对At、Cron、schtasks、系统定时器、容器调度任务等具有监控和篡改防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1106",
+			"tactic": "execution",
+			"color": "",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1202",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS和卡巴斯基：除了cmd等敏感操作，对操作系统提供的可执行命令的程序也有防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "lateral-movement",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基的防病毒规则可在恶意代码从移动介质侵入主机时，第一时间予以查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1091",
+			"tactic": "initial-access",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基的防病毒规则可在恶意代码从移动介质侵入主机时，第一时间予以查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1562",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器进行防护，防止黑客修改域策略或域信任关系。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1195",
+			"tactic": "initial-access",
+			"color": "#31a354",
+			"comment": "WAF：内网和外网域名都挂载在waf上，针对一些SQL注入获取管理员权限、JS劫持等都有防护和拦截。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1190",
+			"tactic": "initial-access",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1558",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "HIDS和卡巴斯基：保护Linux、Mac和Windows的密码存储区和内存。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1555",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "HIDS和卡巴斯基：保护Linux、Mac和Windows的密码存储区和内存。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对无效的签名、恶意程序伪装（重命名伪装、计划任务伪装、文件名后缀加空格、双文件扩展名、伪装文件类型）等有规则防护。\n\nHIDS：对恶意进程伪装（同上）有规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1552",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "HIDS和卡巴斯基：对密码、口令、密钥等进行防御。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基对windows事件日志具有保护作用，服务端对卡巴斯基终端本身也进行了防关闭检测。\n\nHIDS：历史命令会进行保护、危险命令会外发到日志服务器。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1055",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基对windows事件日志具有保护作用，服务端对卡巴斯基终端本身也进行了防关闭检测。\n\nHIDS：历史命令会进行保护、危险命令会外发到日志服务器。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "NIDS：针对南北向流量针对恶意行为模式或恶意报文内容匹配过滤规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "NIDS：针对南北向流量针对恶意行为模式或恶意报文内容匹配过滤规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1205",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "NIDS：针对南北向流量针对恶意行为模式或恶意报文内容匹配过滤规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1011",
+			"tactic": "exfiltration",
+			"color": "#31a354",
+			"comment": "DLP：蓝牙、隔空投送等有规则进行保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1589",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "WAF：根据报文内容有cookie、token信息泄漏防护策略。\n\nNIDS：可识别cookie、token、密码爆破等信息泄漏防护策略。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1185",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对浏览器的劫持木马有查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1596",
+			"tactic": "reconnaissance",
+			"color": "#a1d99b",
+			"comment": "天眼情报",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "defense-evasion",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1610",
+			"tactic": "execution",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对dll的搜索顺序、dll测加载、Dylib劫持、可执行安装程序、动态链接器劫持、Path环境变量劫持、应用搜索路径劫持、服务注册表项的权限不足、内核回调表等规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1112",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对dll的搜索顺序、dll测加载、Dylib劫持、可执行安装程序、动态链接器劫持、Path环境变量劫持、应用搜索路径劫持、服务注册表项的权限不足、内核回调表等规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1491",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1563",
+			"tactic": "lateral-movement",
+			"color": "#31a354",
+			"comment": "HIDS：对远程服务会话劫持等高危命令会进行告警。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1217",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "v",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1092",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对可移动介质中的木马病毒会进行查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1222",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS、卡巴斯基：windows下，针对icacls、take和attrib等工具修改文件权限的敏感操作有监控；linux或Mac下，对使用chown和chmod的有监控。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1595",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "WAF： 根据报文内容和行为模式皆有拦截和封禁策略。\n\nNIDS：根据不同的扫描器，包括sqlmap、awvs、OpenVAS、Nessus等。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "HIDS：针对权限提升漏洞、sudo等危险命令、TCC操作等会进行规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1548",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：针对权限提升漏洞、sudo等危险命令、TCC操作等会进行规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1125",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对系统中监控视频的程序进行查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1087",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "HIDS、NIDS和WAF：对访问passwd文件、域控服务器等有规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1059",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "HIDS：针对powershell、cmd、python、和JavaScript等有高危操作预警。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1070",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：卡巴斯基对windows事件日志具有保护作用，服务端对卡巴斯基终端本身也进行了防关闭检测。\n\nHIDS：历史命令会进行保护、危险命令会外发到日志服务器。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1609",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "HIDS：针对docker或者k8s等容器的相关命令，如有高危操作会进行告警。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1083",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "WAF和NIDS：皆有规则防护对系统的文件与目录发现扫描。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1584",
+			"tactic": "resource-development",
+			"color": "#31a354",
+			"comment": "WAF：对基础设施有各种安全规则的拦截策略。\n\nNIDS：对基础设施有歌中安全规则的识别策略。\n\nHIDS：对基础设施包含本地进程、操作等可疑行为的检测告警策略。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "defense-evasion",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1542",
+			"tactic": "persistence",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1586",
+			"tactic": "resource-development",
+			"color": "#31a354",
+			"comment": "WAF：防爆破、防cookie、token泄漏等\n\nNIDS：可识别coolkie、token或密码爆破等入侵账户攻击模式。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：对容器部署模式有同样的规则防护、包括账户、进程、任务、危险操作等都包括。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "HIDS：对容器部署模式有同样的规则防护、包括账户、进程、任务、危险操作等都包括。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1102",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "WAF：对各种Web服务有各种规则库保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1204",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "邮件网关：针对钓鱼邮件、垃圾邮件等均有关键词规则拦截，可防止用户点击恶意链接或执行恶意可执行文件。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1057",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "卡巴斯基：会防护异常进程对进程的发现和访问。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1591",
+			"tactic": "reconnaissance",
+			"color": "#a1d99b",
+			"comment": "天眼情报",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1606",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "WAF：防爆破、防cookie、token泄漏等\n\nNIDS：可识别coolkie、token或密码爆破等入侵账户攻击模式。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1590",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "WAF：可根据报文内容防止信息收集工具收集域名、子域名列表、DNS相关信息、cname等。\n\nNIDS：可识别信息收集工具、收集域名、子域名列表、DNS等信息防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1210",
+			"tactic": "lateral-movement",
+			"color": "#31a354",
+			"comment": "HIDS：每个月定期升级漏洞库和补丁库保障主机不被黑客通过漏洞获取凭证访问的权限。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1593",
+			"tactic": "reconnaissance",
+			"color": "#a1d99b",
+			"comment": "天眼情报",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "HIDS：针对一些高危操作，例如unix类系统配置authorized_keys文件实现免密登陆、创建新高权限用户等会进行告警和过滤。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1098",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "HIDS：针对一些高危操作，例如unix类系统配置authorized_keys文件实现免密登陆、创建新高权限用户等会进行告警和过滤。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1597",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "NIDS：使用各企业提供的威胁情报中心获取IP等数据。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1566",
+			"tactic": "initial-access",
+			"color": "#31a354",
+			"comment": "邮件网关：针对钓鱼邮件、垃圾邮件等均有关键词规则拦截，可防护恶意邮件附件、恶意链接、恶意服务等。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1110",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "WAF、NIDS和HIDS：都有对于暴力破解的规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1565",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1559",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "HIDS：针对组件对象模型、动态数据交换等都具有规则检测能力。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1001",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "卡巴斯基",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对dll的搜索顺序、dll测加载、Dylib劫持、可执行安装程序、动态链接器劫持、Path环境变量劫持、应用搜索路径劫持、服务注册表项的权限不足、内核回调表等规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对dll的搜索顺序、dll测加载、Dylib劫持、可执行安装程序、动态链接器劫持、Path环境变量劫持、应用搜索路径劫持、服务注册表项的权限不足、内核回调表等规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1574",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对dll的搜索顺序、dll测加载、Dylib劫持、可执行安装程序、动态链接器劫持、Path环境变量劫持、应用搜索路径劫持、服务注册表项的权限不足、内核回调表等规则防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "WAF、NIDS都有对于暴力破解的防护；HIDS定期会扫描所有主机账号的弱密码。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "WAF、NIDS都有对于暴力破解的防护；HIDS定期会扫描所有主机账号的弱密码。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "WAF、NIDS都有对于暴力破解的防护；HIDS定期会扫描所有主机账号的弱密码。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1078",
+			"tactic": "initial-access",
+			"color": "#31a354",
+			"comment": "WAF、NIDS都有对于暴力破解的防护；HIDS定期会扫描所有主机账号的弱密码。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1068",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "HIDS：每个月定期升级漏洞库和补丁库保障主机不被黑客通过漏洞进行提权。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1531",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "HIDS：对高危命令有防护和保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：对python或其他调试技术在进行调试的过程中有防护规则。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "privilege-escalation",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1546",
+			"tactic": "persistence",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1187",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "卡巴斯基：会对用户需要输入密码的场景进行提醒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1553",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基和HIDS：代码签名、GateKeeper、SIP劫、证书等。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "collection",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对系统中监控键盘的程序进行查杀，对钓鱼网站等进行防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1056",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对系统中监控键盘的程序进行查杀，对钓鱼网站等进行防护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1203",
+			"tactic": "execution",
+			"color": "#31a354",
+			"comment": "卡巴斯基：针对浏览器漏洞、office等办公软件的漏洞、常用的第三方软件的漏洞都具有防护和病毒查杀。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1570",
+			"tactic": "lateral-movement",
+			"color": "#31a354",
+			"comment": "HIDS和卡巴斯基：对内部传输文件的协议命令和文件内容会进行规则过滤。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1095",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "NIDS：ICMP、UDP、TCP等规则保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1012",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "卡巴斯基：会防护异常进程对注册表的发现和访问。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1030",
+			"tactic": "exfiltration",
+			"color": "#31a354",
+			"comment": "NIDS：数据包大小即使限制了特定阈值以下，仍然可以通过行为特征进行告警。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1598",
+			"tactic": "reconnaissance",
+			"color": "#31a354",
+			"comment": "邮件网关：针对钓鱼邮件、垃圾邮件等均有关键词规则拦截。\n天眼：流量看到",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1496",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1650",
+			"tactic": "resource-development",
+			"color": "#a1d99b",
+			"comment": "天眼：流量可检测到权限变化",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "HIDS：对高危命令有防护和保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1189",
+			"tactic": "initial-access",
+			"color": "#a1d99b",
+			"comment": "天眼",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1498",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "defense-evasion",
+			"color": "#a1d99b",
+			"comment": "天眼流量监测",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1134",
+			"tactic": "privilege-escalation",
+			"color": "#a1d99b",
+			"comment": "天眼流量监测",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1136",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "HIDS、卡巴斯基针对新账户的创建具有监控管理功能。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "WAF和NIDS：皆有规则防护对系统的网络服务扫描。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1518",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "卡巴斯基：会防护异常进程对软件（包括安全软件）的发现和访问。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1622",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对二进制填充、软件打包、文件隐写、交付编译、木马特种、HTML文件等皆有规则覆盖。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1622",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "卡巴斯基：对二进制填充、软件打包、文件隐写、交付编译、木马特种、HTML文件等皆有规则覆盖。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1052",
+			"tactic": "exfiltration",
+			"color": "#31a354",
+			"comment": "DLP：对USB连接的物理设备能进行保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器进行防护，防止黑客修改域策略或域信任关系。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1484",
+			"tactic": "privilege-escalation",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器进行防护，防止黑客修改域策略或域信任关系。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "credential-access",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器有规则保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器有规则保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1556",
+			"tactic": "persistence",
+			"color": "#31a354",
+			"comment": "HIDS：对域控服务器有规则保护。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1529",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "卡巴斯基：防护各种勒索病毒。",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff",
+			"#43c85dff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": true,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
